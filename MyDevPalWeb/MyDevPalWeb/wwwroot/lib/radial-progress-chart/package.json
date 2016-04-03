@@ -1,0 +1,41 @@
+{
+  "name": "radial-progress-chart",
+  "description": "A customizable Radial Progress Chart written on the top of D3.js.",
+  "version": "0.0.3",
+  "repository": "git@github.com:pablomolnar/radial-progress-chart.git",
+  "scripts": {
+    "test": "mocha",
+    "build": "node browserify.js && ./node_modules/uglify-js/bin/uglifyjs ./dist/radial-progress-chart.js -m -o ./dist/radial-progress-chart.min.js",
+    "hint": "./node_modules/jshint/bin/jshint index.js"
+  },
+  "dependencies": {
+    "d3": "^3.5.0"
+  },
+  "devDependencies": {
+    "browserify": "~10.2.4",
+    "mocha": "^2.2.5",
+    "uglify-js": "2.4.15",
+    "jshint": "2.8.0"
+  },
+  "main": "index.js",
+  "filename": "radial-progress-chart.min.js",
+  "keywords": [
+    "apple",
+    "watch",
+    "radial",
+    "bar",
+    "progress",
+    "chart",
+    "polar",
+    "d3"
+  ],
+  "author": "Pablo Molnar",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "spm": {
+    "dependencies": {
+      "d3": "^3.5.0"
+    },
+    "main": "index.js"
+  }
+}

@@ -1,0 +1,7 @@
+{
+	"name": "MyDevPal",
+	"private": true,
+  "dependencies": {
+    "radial-progress-chart": "latest"
+  }
+}

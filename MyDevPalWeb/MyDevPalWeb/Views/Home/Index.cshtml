@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="single">
+        </div>
+    </div>
+</div>
+<div class="row actions-row">
+    <div class="col-md-12">
+        <div class="actions" ng-repeat="action in mdp.actions">
+            <div class="actions--title" ng-class="action.Source">
+            
+                {{action.Message}}
+            </div>
+            <div class="actions--msg">
+                <span ng-if="action.FocusDelta" class="focus">{{action.FocusDelta}} <i class="fa fa-dot-circle-o"></i></span>
+                <span ng-if="action.VitalityDelta" class="vitality">{{action.VitalityDelta}} <i class="fa fa-battery-full"></i></span>
+                <span ng-if="action.MoodDelta" class="mood">{{action.MoodDelta}} <i class="fa fa-smile-o"></i></span>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row hidden">
+    <div class="col-md-6">
+        <h3>Focus: {{mdp.score.CurrentFocus}}</h3>
+        <h3>Vitality: {{mdp.score.CurrentVitality}}</h3>
+        <h3>Mood: {{mdp.score.CurrentMood}}</h3>
+    </div>
+</div>
+    @*<div class="row">
+        <div class="col-md-12">
+            <div class="container">
+                <ul class="week"></ul>
+                <hr>
+                <div class="date"></div>
+            </div>
+        </div>
+    </div>*@

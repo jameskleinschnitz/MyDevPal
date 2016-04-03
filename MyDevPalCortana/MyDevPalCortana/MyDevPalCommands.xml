@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="mMyDevPalCommandSet_en-us">
+    <AppName>My Developer Pal</AppName>
+    <Example>I'm ready to code</Example>
+
+    <Command Name="readyToCode">
+      <Example> I'm ready to code </Example>
+      <ListenFor RequireAppName="ExplicitlySpecified">Tell {builtin:AppName} I'm ready to code </ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified">Tell {builtin:AppName} Let's do this </ListenFor>
+      <Feedback> You are awesome, Keep at it </Feedback>
+       <VoiceCommandService Target="MyDevPalBackgroundTask"/>
+    </Command>
+    <Command Name="readyToCode1">
+      <Example> I need a hug </Example>
+      <ListenFor RequireAppName="ExplicitlySpecified">Tell {builtin:AppName} I need a hug </ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified">Tell {builtin:AppName} I want to be the big spoon </ListenFor>
+      <Feedback> I'll see if Satya Nadella is around </Feedback>
+      <VoiceCommandService Target="MyDevPalBackgroundTask"/>
+    </Command>
+    <Command Name="doneCoding">
+      <Example> I'm not thinking straight </Example>
+      <ListenFor RequireAppName="ExplicitlySpecified">Tell {builtin:AppName} This is really hard </ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> Tell {builtin:AppName}I'm getting tired </ListenFor>
+      <Feedback> You've been working hard, take a break </Feedback>
+      <VoiceCommandService Target="MyDevPalBackgroundTask"/>
+   </Command>
+    <Command Name="hungry">
+      <Example> I'm hungry </Example>
+      <ListenFor RequireAppName="ExplicitlySpecified">Tell {builtin:AppName} I'm hungry </ListenFor>
+      <Feedback> You're nothing but skin and bones! Eat something! </Feedback>
+      <VoiceCommandService Target="MyDevPalBackgroundTask"/>
+    </Command>
+    <Command Name="full">
+      <Example> That was good food</Example>
+      <ListenFor RequireAppName="ExplicitlySpecified"> Tell {builtin:AppName} That was some great pizza </ListenFor>
+      <ListenFor RequireAppName="ExplicitlySpecified"> Tell {builtin:AppName}  I'm full</ListenFor>
+      <Feedback> Yummy </Feedback>
+      <VoiceCommandService Target="MyDevPalBackgroundTask"/>
+    </Command>
+  </CommandSet>
+</VoiceCommands>
