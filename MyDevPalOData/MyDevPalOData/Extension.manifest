@@ -1,8 +1,0 @@
-﻿{
-  "PrimaryAssembly": "MyDevPalOData.dll",
-  "ContentRootPath": "ContentRoot",
-  "ExtensionName": "MyDevPalOData",
-  "Description": null,
-  "Version": "1.0.0.0",
-  "SecondaryAssemblies": [ ]
-}
